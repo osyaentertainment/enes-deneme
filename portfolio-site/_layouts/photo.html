@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+<div class="home">
+  <h1 class="page-heading">{{ page.strapi_attributes.TestDescription }}</h1>
+  <h2>{{ page.document.strapi_attributes.Title }}</h2>
+  <p>{{ page.document.strapi_attributes.Comment }}</p>
+  <img src="{{ page.document.strapi_attributes.Image.data.attributes.formats.thumbnail| asset_url }}"/>
+</div>
